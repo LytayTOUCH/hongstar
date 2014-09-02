@@ -1,5 +1,5 @@
 <?php
-
+require_once('libs/wp_bootstrap_navwalker.php');
 //Load default style and script of theme
 function load_main_script()  
 { 
@@ -26,3 +26,20 @@ function remove_wp_version_strings( $src ) {
 }
 add_filter( 'script_loader_src', 'remove_wp_version_strings' );
 add_filter( 'style_loader_src', 'remove_wp_version_strings' );
+
+
+// function register_my_menu() {
+//   register_nav_menu('header-menu',__( 'Header Menu' ));
+// }
+// add_action( 'init', 'register_my_menu' );
+
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'header-menu' => __( 'Header Menu' ),
+      'footer-menu' => __( 'Footer Menu' ),
+      'extra-menu' => __( 'Extra Menu' ),
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );

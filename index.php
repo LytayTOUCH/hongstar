@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-
+<b><?php echo get_template_part( 'content', 'page' ); ?></b>
 
 
 <div id="test" class="btn btn-default btn-lg">
@@ -65,7 +65,6 @@ fa-terminal on fa-square<br>
 </span>
 fa-ban on fa-camera
 
-
 <?php if( have_posts() ): while( have_posts() ): the_post(); ?>
     <div <?php post_class(); ?>>
     <h2><?php the_title(); ?></h2>
@@ -78,7 +77,9 @@ fa-ban on fa-camera
 
 
 
+<?php get_search_form(); ?>
 
+<?php comments_template(); ?>
 
 
 
