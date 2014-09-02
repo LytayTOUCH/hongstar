@@ -43,3 +43,12 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+$args = array(
+	'flex-width'    => true,
+	'width'         => 225,
+	'flex-height'    => true,
+	'height'        => 180,
+	'default-image' => get_template_directory_uri()
+);
+add_theme_support( 'custom-header', $args );

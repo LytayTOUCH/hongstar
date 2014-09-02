@@ -7,11 +7,17 @@
 	</head>
 <body>
 
-<?php header_image() ?>
-
 <!--?php wp_nav_menu(array( 'theme_location'  => 'header-menu', 'sort_column' => 'menu_order', 'menu' => 'Categories', 'container_class' => 'main-menu', 'container_id' => 'header') ); ?-->
 
-<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <img  class="img-responsive" alt="Responsive image" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
+<center><h3><?php bloginfo('description'); ?></h3></center>
+
+        </div>
+        <div class="col-md-10">
+            <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -37,5 +43,8 @@
             );
         ?>
     </div>
-</nav>
-<p><?php bloginfo('description'); ?></p>
+</nav>      
+
+        </div>
+    </div>
+</div>

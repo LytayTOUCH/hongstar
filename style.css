@@ -9,3 +9,10 @@ Version: 1.0
 @import url(css/bootstrap.min.css);
 @import url(css/bootstrap-theme.min.css);
 @import url(css/font-awesome.min.css);
+.navbar{
+	margin-bottom: 0px;
+}
+
+.img-responsive{
+    margin: 0 auto;
+}
