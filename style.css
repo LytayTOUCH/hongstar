@@ -16,3 +16,22 @@ Version: 1.0
 .img-responsive{
     margin: 0 auto;
 }
+.container-fluid {
+	margin-top: 5px;
+}
+.header_content {
+	margin: 10px;
+	padding: 5px;
+	height: 85px;
+}
+.custom-margin{
+	margin: 5px 0px 0px 0px;
+	font-size: 18px;
+	font-weight: 900;
+}
+a:hover, a:focus{
+	text-decoration: none;
+}
+.search-custom-margin{
+
+}
