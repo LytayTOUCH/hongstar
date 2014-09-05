@@ -46,10 +46,13 @@
                             );
                         ?>
                         <form role="search" class="navbar-form navbar-right">
-                            <div class="form-group">
-                                <input type="text" placeholder="Search" class="form-control">
-                            </div>
-                         </form>
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                              </span>
+                            </div><!-- /input-group -->
+                        </form>
                 </div>
             </nav>
         </div>
