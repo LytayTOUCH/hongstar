@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<title><?php bloginfo('name');?><?php wp_title('|', true, 'left'); ?> </title>
 		<?php wp_head(); ?>
@@ -15,7 +16,7 @@
         <div class="col-md-2">
             <a href="<?php bloginfo('url'); ?>">
                 <img  class="img-responsive img-rounded" alt="Responsive image" src="<?php header_image(); ?>" alt="" />
-                <span class="text-center"><p class="custom-margin"><?php bloginfo('description'); ?></p></span>
+                <span class="text-center"><p class="custom-margin-bloginfo"><?php bloginfo('description'); ?></p></span>
             </a>
             
         </div>
@@ -45,17 +46,18 @@
                                 'walker'            => new wp_bootstrap_navwalker())
                             );
                         ?>
-                        <form role="search" class="navbar-form navbar-right">
-                            <div class="input-group">
-                              <input type="text" class="form-control">
-                              <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                              </span>
-                            </div><!-- /input-group -->
-                        </form>
+                        <?php //get_search_form(); ?>
                 </div>
             </nav>
         </div>
+        <div class="col-md-3">
+            <?php if ( dynamic_sidebar('Main Sidebar') ) : else : endif; ?>
+        </div>
+        <div class="col-md-3">
+            <?php if ( dynamic_sidebar('First Front Page Widget Area') ) : else : endif; ?>
+        </div>
+        <div class="col-md-4">
+            <?php if ( dynamic_sidebar('Second Front Page Widget Area') ) : else : endif; ?>
+        </div>
     </div>
 
-</div>

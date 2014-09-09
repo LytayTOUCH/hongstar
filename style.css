@@ -24,14 +24,31 @@ Version: 1.0
 	padding: 5px;
 	height: 85px;
 }
-.custom-margin{
-	margin: 5px 0px 0px 0px;
-	font-size: 18px;
+.custom-margin-bloginfo{
+	margin: 0px;
+	font-size: 22px;
 	font-weight: 900;
+	color: #3B227C;
 }
 a:hover, a:focus{
 	text-decoration: none;
 }
+a.navbar-brand {
+	border-right: 3px solid #DFDFDF;
+}
 .search-custom-margin{
 
+}
+.fa {
+	color:#3B227C;
+}
+.fa-home{
+	color:#DBB900;
+}
+.navbar-default{
+
+}
+
+footer{
+	padding: 0px 0px 20px 20px;
 }
