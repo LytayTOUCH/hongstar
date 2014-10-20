@@ -7,7 +7,7 @@ Description: This is for private use of Hong Star Travel & Tours Company.
 Version: 1.0
 */
 @import url(css/bootstrap.min.css);
-@import url(css/bootstrap-theme.min.css);
+/*@import url(css/bootstrap-theme.min.css);*/
 @import url(css/font-awesome.min.css);
 .navbar{
 	margin-bottom: 0px;
@@ -40,7 +40,7 @@ a.navbar-brand {
 
 }
 .fa {
-	color:#3B227C;
+	color:#428bca;
 }
 .fa-home{
 	color:#DBB900;
@@ -48,7 +48,32 @@ a.navbar-brand {
 .navbar-default{
 
 }
+.fa-exclamation-triangle{
+	color:#DB0000;
+}
 
 footer{
 	padding: 0px 0px 20px 20px;
+}
+.custom-margin-top{
+	margin-top: 55px;
+}
+hr {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+footer {
+padding: 0px 0px 10px 10px;
+}
+.nav-custom{
+
+}
+
+a {
+color: #000000;
+}
+
+.navbar-default {
+background-color: rgba(248, 248, 248, 0);
+border-color: rgba(231, 231, 231, 0);
 }

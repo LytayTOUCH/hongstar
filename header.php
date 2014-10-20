@@ -12,17 +12,11 @@
 
 <div class="container-fluid">
     <div class="row">
-        
-        <div class="col-md-2">
-            <a href="<?php bloginfo('url'); ?>">
-                <img  class="img-responsive img-rounded" alt="Responsive image" src="<?php header_image(); ?>" alt="" />
-                <span class="text-center"><p class="custom-margin-bloginfo"><?php bloginfo('description'); ?></p></span>
-            </a>
-            
-        </div>
+    <div class="col-md-10 col-md-offset-1">
 
-        <div class="col-md-10">
-            <nav class="navbar navbar-default" role="navigation">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-default nav-custom" role="navigation">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
@@ -31,7 +25,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a href="<?php bloginfo('url'); ?>" class="navbar-brand"><i class="fa fa-home fa-lg"></i></a>
+                  <!-- a href="<?php bloginfo('url'); ?>" class="navbar-brand"><i class="fa fa-home fa-lg"></i></a-->
                   <!-- <a href="<?php bloginfo('url'); ?>"><i class="fa fa-home fa-3x"></i></a> -->
                 </div>
     
@@ -50,14 +44,15 @@
                 </div>
             </nav>
         </div>
-        <div class="col-md-3">
-            <?php if ( dynamic_sidebar('Main Sidebar') ) : else : endif; ?>
-        </div>
-        <div class="col-md-3">
-            <?php if ( dynamic_sidebar('First Front Page Widget Area') ) : else : endif; ?>
-        </div>
-        <div class="col-md-4">
-            <?php if ( dynamic_sidebar('Second Front Page Widget Area') ) : else : endif; ?>
+    </div>
+    <div class="row"></div>
+
+    <div class="row img-rounded" style="background: #FFFD44;">
+        <div class="col-md-12">
+            <a href="<?php bloginfo('url'); ?>">
+                <img  class="img-responsive img-rounded" alt="Responsive image" src="<?php header_image(); ?>" alt="" />
+                <span class="text-center"><p class="custom-margin-bloginfo"><?php bloginfo('description'); ?></p></span>
+            </a>
         </div>
     </div>
 

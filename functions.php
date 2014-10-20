@@ -84,8 +84,8 @@ function hongstar_widgets_init() {
 		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'hongstar' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 
 	register_sidebar( array(
@@ -94,18 +94,8 @@ function hongstar_widgets_init() {
 		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'hongstar' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name' => __( 'footer-content', 'hongstar' ),
-		'id' => 'sidebar-4',
-		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'hongstar' ),
-		'before_widget' => '<hr><footer id="%1$s" class="widget %2$s">',
-		'after_widget' => '</footer>',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h4 class="widget-title">',
+		'after_title' => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'hongstar_widgets_init' );
