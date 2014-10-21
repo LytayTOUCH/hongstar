@@ -1,4 +1,7 @@
 <?php
+
+add_theme_support('post-thumbnails', array('page'));
+
 require_once('libs/wp_bootstrap_navwalker.php');
 //Load default style and script of theme
 function load_main_script()  
@@ -69,9 +72,9 @@ function special_nav_class($classes, $item){
 
 function hongstar_widgets_init() {
 	register_sidebar( array(
-		'name' => __( 'Main Sidebar', 'hongstar' ),
+		'name' => __( 'Banner Header', 'hongstar' ),
 		'id' => 'sidebar-1',
-		'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'hongstar' ),
+		'description' => __( 'This Widget is use to show the banner of the website', 'hongstar' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="widget-title">',
@@ -96,6 +99,16 @@ function hongstar_widgets_init() {
 		'after_widget' => '</aside>',
 		'before_title' => '<h4 class="widget-title">',
 		'after_title' => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Airline Slide Image', 'hongstar' ),
+		'id' => 'sidebar-4',
+		'description' => __( 'Show the slide show image of ariline', 'hongstar' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s panel panel-default">',
+		'after_widget' => '</div>',
+		'before_title' => '<div class="widget-title panel-heading">',
+		'after_title' => '</div>',
 	) );
 }
 add_action( 'widgets_init', 'hongstar_widgets_init' );

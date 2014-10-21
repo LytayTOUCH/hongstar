@@ -14,6 +14,19 @@
     <div class="row">
     <div class="col-md-10 col-md-offset-1">
 
+    <div class="row img-rounded custom-nav-style" style="">
+        <div class="col-md-2">
+            <a href="<?php bloginfo('url'); ?>">
+                <img  class="img-responsive img-rounded" alt="Responsive image" src="<?php header_image(); ?>" alt="" />
+            </a>
+        </div>
+        <div class="col-md-10">
+            <?php if ( dynamic_sidebar('Banner Header') ) : else : endif; ?>
+        </div>
+    </div>
+    
+<div class="row"></div>
+
     <div class="row">
         <div class="col-md-12">
             <nav class="navbar navbar-default nav-custom" role="navigation">
@@ -25,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <!-- a href="<?php bloginfo('url'); ?>" class="navbar-brand"><i class="fa fa-home fa-lg"></i></a-->
+                  <a href="<?php bloginfo('url'); ?>" class="navbar-brand"><i class="fa fa-home fa-lg"></i> &nbsp; <?php bloginfo('description'); ?></a>
                   <!-- <a href="<?php bloginfo('url'); ?>"><i class="fa fa-home fa-3x"></i></a> -->
                 </div>
     
@@ -43,16 +56,6 @@
                         <?php //get_search_form(); ?>
                 </div>
             </nav>
-        </div>
-    </div>
-    <div class="row"></div>
-
-    <div class="row img-rounded" style="background: #FFFD44;">
-        <div class="col-md-12">
-            <a href="<?php bloginfo('url'); ?>">
-                <img  class="img-responsive img-rounded" alt="Responsive image" src="<?php header_image(); ?>" alt="" />
-                <span class="text-center"><p class="custom-margin-bloginfo"><?php bloginfo('description'); ?></p></span>
-            </a>
         </div>
     </div>
 
