@@ -105,10 +105,30 @@ function hongstar_widgets_init() {
 		'name' => __( 'Airline Slide Image', 'hongstar' ),
 		'id' => 'sidebar-4',
 		'description' => __( 'Show the slide show image of ariline', 'hongstar' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s panel panel-default">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s box box-yellow">',
 		'after_widget' => '</div>',
-		'before_title' => '<div class="widget-title panel-heading">',
-		'after_title' => '</div>',
+		'before_title' => '<h4 class="widget-title panel-heading">',
+		'after_title' => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Address Box', 'hongstar' ),
+		'id' => 'sidebar-5',
+		'description' => __( 'Show the slide show image of ariline', 'hongstar' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s box box-red">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title panel-heading">',
+		'after_title' => '</h4>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Facebook Like Page', 'hongstar' ),
+		'id' => 'sidebar-6',
+		'description' => __( 'Show the slide show image of ariline', 'hongstar' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s box box-blue">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title panel-heading">',
+		'after_title' => '</h4>',
 	) );
 }
 add_action( 'widgets_init', 'hongstar_widgets_init' );

@@ -4,6 +4,14 @@
 				<?php if ( dynamic_sidebar('Airline Slide Image') ) : else : endif; ?>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<?php if ( dynamic_sidebar('Address Box') ) : else : endif; ?>
+			</div>
+			<div class="col-md-6">
+				<?php if ( dynamic_sidebar('Facebook Like Page') ) : else : endif; ?>
+			</div>
+		</div>
 
 	</div>
 </div>
