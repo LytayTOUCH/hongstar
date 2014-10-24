@@ -82,12 +82,12 @@ function hongstar_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'First Front Page Widget Area', 'hongstar' ),
+		'name' => __( 'Visitor Counter', 'hongstar' ),
 		'id' => 'sidebar-2',
-		'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'hongstar' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
-		'before_title' => '<h4 class="widget-title">',
+		'description' => __( 'Widget to show the visitor counter', 'hongstar' ),
+		'before_widget' => '<div id="%1$s" class="widget %2$s box box-green">',
+		'after_widget' => '</div>',
+		'before_title' => '<h4 class="widget-title panel-heading">',
 		'after_title' => '</h4>',
 	) );
 
